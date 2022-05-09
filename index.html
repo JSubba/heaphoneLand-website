@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>HeadphoneLand</title>
   </head>
   <body>
@@ -28,8 +32,8 @@
 
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Headphones</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#display">Headphones</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -46,27 +50,32 @@
         </svg>
       </header>
 
-      <section class="hero">
+      <section id="hero" class="hero">
         <h1>Great vibes wherever You Go!</h1>
         <p class="subhead">
           A must-have product to keep energized and positive all the time.
         </p>
 
         <svg
+          id="sw-js-blob-svg"
           class="down-arrow"
-          viewBox="0 0 16 132"
-          fill="none"
+          viewBox="0 0 100 100"
           xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
         >
           <path
-            d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z"
-            fill="black"
-          />
+            fill="url(#sw-gradient)"
+            d="M22.6,-14.6C28.1,-3.6,30.4,7.7,26.1,17.4C21.8,27.1,10.9,35.4,-0.7,35.7C-12.2,36.1,-24.5,28.7,-29.3,18.6C-34.1,8.6,-31.5,-4,-25.3,-15.4C-19.2,-26.9,-9.6,-37.1,-0.5,-36.8C8.6,-36.5,17.2,-25.7,22.6,-14.6Z"
+            width="100%"
+            height="100%"
+            transform="translate(50 50)"
+            stroke-width="0"
+            style="transition: all 0.3s ease 0s"
+          ></path>
         </svg>
       </section>
 
-      <section class="display-content">
-        <!-- <section class="more-info"> -->
+      <section id="display" class="display-content">
         <div class="feature">
           <div class="content">
             <p class="title">Right Fit</p>
@@ -110,6 +119,42 @@
             </p>
           </div>
           <img src="/assets/headphone5.jpg" alt="headphone" />
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrapper">
+          <div class="contact-left">
+            <h2>Contact</h2>
+
+            <form action="">
+              <label for="name">Name</label><br />
+              <input type="text" id="name" name="name" /><br />
+              <label for="message">Message</label><br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea
+              ><br />
+              <input
+                type="submit"
+                class="send-message-cta"
+                value="Send message"
+              />
+            </form>
+          </div>
+          <div class="contact-right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209796322542!3d34.10028430183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611702818717!5m2!1sen!2sus"
+              width="450"
+              height="450"
+            >
+              frameborder="0" style="border: 0" allowfullscreen=""
+              aria-hidden="false" tabindex="0" ></iframe
+            >
+          </div>
         </div>
       </section>
     </div>
